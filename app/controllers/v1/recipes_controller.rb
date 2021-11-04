@@ -6,7 +6,7 @@ class V1::RecipesController < ApplicationController
   end
 
   def show
-    # @recipe = Recipe.find(params[:id])
+    render json: get_recipe(params[:id])
   end
 
   private
@@ -35,6 +35,18 @@ class V1::RecipesController < ApplicationController
         chef: recipe.fields[:chef] ? recipe.chef.name : ''
       }
     end
+  end
+
+  def get_recipe(id)
+    recipe = contentful_client.entry(id)
+    {
+      id: recipe.id,
+      title: recipe.title,
+      image: recipe.photo.url,
+      tags: recipe.fields[:tags] ? recipe.tags.map { |tag| tag.name } : [],
+      description: recipe.description,
+      chef: recipe.fields[:chef] ? recipe.chef.name : ''
+    }
   end
 
 end
