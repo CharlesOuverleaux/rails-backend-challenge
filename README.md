@@ -3,7 +3,7 @@
 This applications shows a list of recipes. Each recipe has a detailed page with more information.
 
 ## Demo
-![Alt Text](http://g.recordit.co/Ra4CqpAi3M.gif)
+![Alt Text](http://g.recordit.co/PhkBvR6HoB.gif)
 
 ## Technology
 
