@@ -1,24 +1,30 @@
-# README
+# README - Backend Technical Challenge / Recipes API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This applications shows a list of recipes. Each recipe has a detailed page with more information.
 
-Things you may want to cover:
+## Demo
+![Alt Text](http://g.recordit.co/Ra4CqpAi3M.gif)
 
-* Ruby version
+## Technology
 
-* System dependencies
+- Backend: Ruby on Rails (Ruby '2.6.6')
+Ruby enables the fast creation of a project. The backend here exposes restful endpoints to the frontend. GET /v1/recipes will return a JSON of recipes.
 
-* Configuration
+- Frontend: React (react-rails)
+React is one of the most popular framework/library. By using React to build this feature we can easily re-use the components in other larger components or Apps. Thanks to React we can separate our concerns, we can easily include the logic (api call (axios)), html(Recipe details) and styles (Recipe Cards)in the component.
 
-* Database creation
+## How to use this app?
 
-* Database initialization
+Install all dependencies then:
+```bash
+bundle install
+rails server
+```
 
-* How to run the test suite
+Your app should now be running on http://localhost:3000
 
-* Services (job queues, cache servers, search engines, etc.)
+Run tests
 
-* Deployment instructions
-
-* ...
+```bash
+bundle exec rspec
+```
