@@ -1,0 +1,42 @@
+.RecipesDetails {
+  overflow: hidden;
+  height: 420px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.RecipeDetailsImage {
+  height: 100%;
+  width: 50%;
+  object-fit: cover;
+}
+
+.RecipeDetailsInfos {
+  padding: 16px;
+}
+
+.RecipeDetailsTags {
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+.RecipeDetailsPill {
+  background-color: #46D7AB;
+  border-radius: 15px;
+  padding: 10px;
+}
+.RecipeDetailsInfos button {
+  border: none;
+  border-radius: 15px;
+  background-color: #46D7AB;
+  padding: 20px;
+  margin: 20px;
+}
+
+.RecipeDetailsInfos button:hover {
+  opacity: 0.8;
+}
