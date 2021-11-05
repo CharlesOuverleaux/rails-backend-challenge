@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from 'axios';
 import RecipeDetails from "./RecipeDetails";
 import RecipesList from "./RecipesList";
+import './App.css';
 
 const App = () => {
   const [recipes, setRecipes] = useState([]);
@@ -32,6 +33,7 @@ const App = () => {
   const recipeDetails = <RecipeDetails selectedRecipe={selectedRecipe} handleSelection={handleSelection}/>
   return (
     <div className='App'>
+      <h1>Bon Apétit!</h1>
       {selectedRecipe ? recipeDetails : recipeList}
     </div>
   )

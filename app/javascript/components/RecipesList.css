@@ -1,0 +1,28 @@
+
+.RecipeCard {
+  overflow: hidden;
+  background: #FDDC5D;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+.RecipeCardImage {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.RecipeCardTitle {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.RecipeCardInfo {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+}
